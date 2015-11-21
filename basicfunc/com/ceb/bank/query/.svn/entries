@@ -1,0 +1,74 @@
+10
+
+dir
+3059
+svn://10.200.44.210:9999/repository/trunk/hdqsEJB/basicfunc/com/ceb/bank/query
+svn://10.200.44.210:9999
+
+
+
+2014-07-09T07:18:15.558242Z
+3059
+wangjie
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+f5fd4684-c36c-11e2-bb57-6bcef06011e1
+
+IHandleQuery.java
+file
+
+
+
+
+2014-06-11T02:36:29.765000Z
+179ddf4af177d21151a03cca2d253c1d
+2014-06-11T02:37:56.276699Z
+2995
+wangjie
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+295
+
+impl
+dir
+
+lx
+dir
+
+output
+dir
+
+scanner
+dir
+
