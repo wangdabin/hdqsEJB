@@ -1,0 +1,135 @@
+package com.ceb.bank.constants;
+
+import org.apache.hadoop.hbase.util.Bytes;
+
+public final class HBaseQueryConstants {
+	private HBaseQueryConstants() {
+	}
+
+	public static final String FAMILIER_CHAR_F = "F";
+	public static final String FAMILIER_CHAR_I = "I";
+	public static final byte[] FAMILIER_BYTE_F = Bytes.toBytes("F");
+	public static final byte[] FAMILIER_BYTE_I = Bytes.toBytes("I");
+
+	/**
+	 * AGDFH 对公定期主文件表
+	 */
+	public static final String TABLE_AGDFH = "AGDFH";
+	/**
+	 * AGDMX 对公定期明细表
+	 */
+	public static final String TABLE_AGDMX = "AGDMX";
+	/**
+	 * AGHFH 对公活期主文件表
+	 */
+	public static final String TABLE_AGHFH = "AGHFH";
+	/**
+	 * AGHMX 对公活期明细表
+	 */
+	public static final String TABLE_AGHMX = "AGHMX";
+	/**
+	 * 法透账户信息
+	 */
+	public static final String TABLE_AGHMX_FT = "AGHMX_FT";
+	/**
+	 * AKHZH 客户帐号系统帐号对照表
+	 */
+	public static final String TABLE_AKHZH = "AKHZH";
+	/**
+	 * 客户账号0773，账号为RowKey的第一个字段
+	 */
+	public static final String TABLE_AKHZH_0773 = "AKHZH0773";
+	/**
+	 * ASDMX 对私定期明细表
+	 */
+	public static final String TABLE_ASDMX = "ASDMX";
+	/**
+	 * 对私交易明细表
+	 */
+	public static final String TABLE_ASHMX = "ASHMX";
+	/**
+	 * 账号解析表
+	 */
+	public static final String TABLE_AZHJX = "AZHJX";
+	/**
+	 * 0772查询输入为客户账号的类型是存单、国债、储蓄存款存折时用的解析表
+	 */
+	public static final String TABLE_AZHJX0772 = "AZHJX0772";
+	/**
+	 * 对公客户表
+	 */
+	public static final String TABLE_BDGKH = "BDGKH";
+	/**
+	 * 对私客户表
+	 */
+	public static final String TABLE_BDSKH = "BDSKH";
+	/**
+	 * 法透余额
+	 */
+	public static final String TABLE_BFTYE = "BFTYE";
+	/**
+	 * 换卡登记表
+	 */
+	public static final String TABLE_BHKDJ = "BHKDJ";
+	/**
+	 * 活期透支
+	 */
+	public static final String TABLE_BHQTZ = "BHQTZ";
+	/**
+	 * 对私客户证件表
+	 */
+	public static final String TABLE_BKHZJ = "BKHZJ";
+	/**
+	 * 同业客户表
+	 */
+	public static final String TABLE_BTYKH = "BTYKH";
+
+	/**
+	 * VYKTD 一卡通表
+	 */
+	public static final String TABLE_VYKTD = "VYKTD";
+
+	public static final String HBASE_TABLE_NAME_ASYNQUERY = "asynrecord";
+
+	/**
+	 * 交易明细纪录表
+	 */
+	public static final String HBASE_TABLE_NAME_EXCHANGE_RECORD = "exchangerecord";
+	/**
+	 * 柜员索引表
+	 */
+	public static final String HBASE_TABLE_NAME_INDEX_GY = "gyIndexRecord";
+	/**
+	 * 机构索引表
+	 */
+	public static final String HBASE_TABLE_NAME_INDEX_JG = "jgIndexRecord";
+	/**
+	 * 交易码索引表
+	 */
+	public static final String HBASE_TABLE_NAME_INDEX_CODE = "codeIndexRecord";
+	/**
+	 * 柜员机构索引表
+	 */
+	public static final String HBASE_TABLE_NAME_INDEX_GYJG = "gyjgIndexRecord";
+	/**
+	 * 柜员交易码索引表
+	 */
+	public static final String HBASE_TABLE_NAME_INDEX_GYCODE = "gyCodeIndexRecord";
+	/**
+	 * 机构交易码索引表
+	 */
+	public static final String HBASE_TABLE_NAME_INDEX_JGCODE = "jgCodeIndexRecord";
+	/**
+	 * 受理编码索引表
+	 */
+	public static final String HBASE_TABLE_NAME_INDEX_HANDLENO = "handleIndexRecord";
+	/**
+	 * 柜员机构交易码索引表
+	 */
+	public static final String HBASE_TABLE_NAME_INDEX_GYJGCODE = "gyjgcodeIndexRecord";
+	/**
+	 * 日期索引表
+	 */
+	public static final String HBASE_TABLE_NAME_INDEX_DATE = "dateIndexRecord";
+
+}
