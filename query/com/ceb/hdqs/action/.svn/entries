@@ -1,0 +1,61 @@
+10
+
+dir
+3059
+svn://10.200.44.210:9999/repository/trunk/hdqsEJB/query/com/ceb/hdqs/action
+svn://10.200.44.210:9999
+
+
+
+2014-07-09T07:18:15.558242Z
+3059
+wangjie
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+f5fd4684-c36c-11e2-bb57-6bcef06011e1
+
+asyn
+dir
+
+authorize
+dir
+
+query
+dir
+
+query0770
+dir
+
+query0771
+dir
+
+query0772
+dir
+
+query0773
+dir
+
+query0775
+dir
+
+query0779
+dir
+
+query0781
+dir
+
+synchronize
+dir
+
