@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j='http://jakarta.apache.org/log4j/' > 
+  
+  <appender name="STDOUT" class="org.apache.log4j.ConsoleAppender">
+    <param name="Encoding" value="UTF-8"/>
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="[%d{MM-dd HH\:mm\:ss} %-5p] %c{4}\:%L - %m%n" />
+    </layout>
+  </appender>
+  
+  <appender name="UTILS"  class="org.apache.log4j.RollingFileAppender">
+  	<param name="Encoding" value="UTF-8"/>    
+    <param name="File" value="${HDQS_LOG}/utils.log" />
+    <param name="MaxFileSize" value="256MB"/>
+    <param name="MaxBackupIndex" value="20" />
+    <param name="Append" value="true" />
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="[%d{MM-dd HH\:mm\:ss} %-5p] [%c\:%L] - %m%n"/>
+    </layout>
+  </appender>
+  <appender name="AUTHORIZE" class="org.apache.log4j.RollingFileAppender">
+  	<param name="Encoding" value="UTF-8"/>  
+    <param name="File" value="${HDQS_LOG}/authorize.log" />
+    <param name="MaxFileSize" value="256MB"/>
+    <param name="MaxBackupIndex" value="20" />
+    <param name="Append" value="true" />
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="[%d{MM-dd HH\:mm\:ss} %-5p] [%c\:%L] - %m%n"/>
+    </layout>
+  </appender>
+  <appender name="SYNCHRONIZED" class="org.apache.log4j.RollingFileAppender">
+  	<param name="Encoding" value="UTF-8"/>  
+    <param name="File" value="${HDQS_LOG}/syn.log" />
+    <param name="MaxFileSize" value="256MB"/>
+    <param name="MaxBackupIndex" value="20" />
+    <param name="Append" value="true" />
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="[%d{MM-dd HH\:mm\:ss} %-5p] [%c\:%L] - %m%n"/>
+    </layout>
+  </appender>
+  <appender name="CLUSTERSWITCH" class="org.apache.log4j.RollingFileAppender">
+  	<param name="Encoding" value="UTF-8"/>  
+    <param name="File" value="${HDQS_LOG}/clusterSwitch.log" />
+    <param name="MaxFileSize" value="256MB"/>
+    <param name="MaxBackupIndex" value="20" />
+    <param name="Append" value="true" />
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="[%d{MM-dd HH\:mm\:ss} %-5p] [%c\:%L] - %m%n"/>
+    </layout>
+  </appender>
+  <appender name="ACTION" class="org.apache.log4j.RollingFileAppender">
+  	<param name="Encoding" value="UTF-8"/>
+    <param name="File" value="${HDQS_LOG}/action.log" />
+    <param name="MaxFileSize" value="256MB"/>
+    <param name="MaxBackupIndex" value="20" />
+    <param name="Append" value="true" />
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="[%d{MM-dd HH\:mm\:ss} %-5p] [%c\:%L] - %m%n"/>
+    </layout>
+  </appender>
+  <appender name="VERIFY" class="org.apache.log4j.RollingFileAppender">
+  	<param name="Encoding" value="UTF-8"/>
+    <param name="File" value="${HDQS_LOG}/verify.log" />
+    <param name="MaxFileSize" value="256MB"/>
+    <param name="MaxBackupIndex" value="20" />
+    <param name="Append" value="true" />
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="[%d{MM-dd HH\:mm\:ss} %-5p] [%c\:%L] - %m%n"/>
+    </layout>
+  </appender>
+  <appender name="SERVICE" class="org.apache.log4j.RollingFileAppender">
+  	<param name="Encoding" value="UTF-8"/>  
+    <param name="File" value="${HDQS_LOG}/service.log" />
+    <param name="MaxFileSize" value="256MB"/>
+    <param name="MaxBackupIndex" value="20" />
+    <param name="Append" value="true" />
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="[%d{MM-dd HH\:mm\:ss} %-5p] [%c\:%L] - %m%n"/>
+    </layout>
+  </appender>
+  <appender name="SOP" class="org.apache.log4j.RollingFileAppender">
+  	<param name="Encoding" value="UTF-8"/>  
+    <param name="File" value="${HDQS_LOG}/sop.log" />
+    <param name="MaxFileSize" value="256MB"/>
+    <param name="MaxBackupIndex" value="20" />
+    <param name="Append" value="true" />
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="[%d{MM-dd HH\:mm\:ss} %-5p] [%c\:%L] - %m%n"/>
+    </layout>
+  </appender>
+  <appender name="WTC" class="org.apache.log4j.RollingFileAppender">
+  	<param name="Encoding" value="UTF-8"/>  
+    <param name="File" value="${HDQS_LOG}/wtc.log" />
+    <param name="MaxFileSize" value="256MB"/>
+    <param name="MaxBackupIndex" value="20" />
+    <param name="Append" value="true" />
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="[%d{MM-dd HH\:mm\:ss} %-5p] [%c\:%L] - %m%n"/>
+    </layout>
+  </appender>
+  <appender name="Handle0770Query" class="org.apache.log4j.RollingFileAppender">
+  	<param name="Encoding" value="UTF-8"/>  
+    <param name="File" value="${HDQS_LOG}/0770.log" />
+    <param name="MaxFileSize" value="256MB"/>
+    <param name="MaxBackupIndex" value="20" />
+    <param name="Append" value="true" />
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="[%d{MM-dd HH\:mm\:ss} %-5p] [%c\:%L] - %m%n"/>
+    </layout>
+  </appender>
+  <appender name="Handle0771Query" class="org.apache.log4j.RollingFileAppender">
+  	<param name="Encoding" value="UTF-8"/>  
+    <param name="File" value="${HDQS_LOG}/0771.log" />
+    <param name="MaxFileSize" value="256MB"/>
+    <param name="MaxBackupIndex" value="20" />
+    <param name="Append" value="true" />
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="[%d{MM-dd HH\:mm\:ss} %-5p] [%c\:%L] - %m%n"/>
+    </layout>
+  </appender>
+  <appender name="Handle0772Query" class="org.apache.log4j.RollingFileAppender">
+  	<param name="Encoding" value="UTF-8"/>  
+    <param name="File" value="${HDQS_LOG}/0772.log" />
+    <param name="MaxFileSize" value="256MB"/>
+    <param name="MaxBackupIndex" value="20" />
+    <param name="Append" value="true" />
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="[%d{MM-dd HH\:mm\:ss} %-5p] [%c\:%L] - %m%n"/>
+    </layout>
+  </appender>
+  <appender name="Handle0773Query" class="org.apache.log4j.RollingFileAppender">
+  	<param name="Encoding" value="UTF-8"/>  
+    <param name="File" value="${HDQS_LOG}/0773.log" />
+    <param name="MaxFileSize" value="256MB"/>
+    <param name="MaxBackupIndex" value="20" />
+    <param name="Append" value="true" />
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="[%d{MM-dd HH\:mm\:ss} %-5p] [%c\:%L] - %m%n"/>
+    </layout>
+  </appender>
+  <appender name="Handle0774Query" class="org.apache.log4j.RollingFileAppender">
+  	<param name="Encoding" value="UTF-8"/>  
+    <param name="File" value="${HDQS_LOG}/0774.log" />
+    <param name="MaxFileSize" value="256MB"/>
+    <param name="MaxBackupIndex" value="20" />
+    <param name="Append" value="true" />
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="[%d{MM-dd HH\:mm\:ss} %-5p] [%c\:%L] - %m%n"/>
+    </layout>
+  </appender>
+  <appender name="Handle0775Query" class="org.apache.log4j.RollingFileAppender">
+  	<param name="Encoding" value="UTF-8"/>  
+    <param name="File" value="${HDQS_LOG}/0775.log" />
+    <param name="MaxFileSize" value="256MB"/>
+    <param name="MaxBackupIndex" value="20" />
+    <param name="Append" value="true" />
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="[%d{MM-dd HH\:mm\:ss} %-5p] [%c\:%L] - %m%n"/>
+    </layout>
+  </appender>
+  <appender name="Handle0776Query" class="org.apache.log4j.RollingFileAppender">
+  	<param name="Encoding" value="UTF-8"/>  
+    <param name="File" value="${HDQS_LOG}/0776.log" />
+    <param name="MaxFileSize" value="256MB"/>
+    <param name="MaxBackupIndex" value="20" />
+    <param name="Append" value="true" />
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="[%d{MM-dd HH\:mm\:ss} %-5p] [%c\:%L] - %m%n"/>
+    </layout>
+  </appender>
+  <appender name="Handle0777Query" class="org.apache.log4j.RollingFileAppender">
+  	<param name="Encoding" value="UTF-8"/>  
+    <param name="File" value="${HDQS_LOG}/0777.log" />
+    <param name="MaxFileSize" value="256MB"/>
+    <param name="MaxBackupIndex" value="20" />
+    <param name="Append" value="true" />
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="[%d{MM-dd HH\:mm\:ss} %-5p] [%c\:%L] - %m%n"/>
+    </layout>
+  </appender>
+  <appender name="Handle0778Query" class="org.apache.log4j.RollingFileAppender">
+  	<param name="Encoding" value="UTF-8"/>  
+    <param name="File" value="${HDQS_LOG}/0778.log" />
+    <param name="MaxFileSize" value="256MB"/>
+    <param name="MaxBackupIndex" value="20" />
+    <param name="Append" value="true" />
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="[%d{MM-dd HH\:mm\:ss} %-5p] [%c\:%L] - %m%n"/>
+    </layout>
+  </appender>
+  <appender name="Handle0779Query" class="org.apache.log4j.RollingFileAppender">
+  	<param name="Encoding" value="UTF-8"/>  
+    <param name="File" value="${HDQS_LOG}/0779.log" />
+    <param name="MaxFileSize" value="256MB"/>
+    <param name="MaxBackupIndex" value="20" />
+    <param name="Append" value="true" />
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="[%d{MM-dd HH\:mm\:ss} %-5p] [%c\:%L] - %m%n"/>
+    </layout>
+  </appender>
+  <appender name="Handle0780Query" class="org.apache.log4j.RollingFileAppender">
+  	<param name="Encoding" value="UTF-8"/>  
+    <param name="File" value="${HDQS_LOG}/0780.log" />
+    <param name="MaxFileSize" value="256MB"/>
+    <param name="MaxBackupIndex" value="20" />
+    <param name="Append" value="true" />
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="[%d{MM-dd HH\:mm\:ss} %-5p] [%c\:%L] - %m%n"/>
+    </layout>
+  </appender>
+  <appender name="Handle0781Query" class="org.apache.log4j.RollingFileAppender">
+  	<param name="Encoding" value="UTF-8"/>  
+    <param name="File" value="${HDQS_LOG}/0781.log" />
+    <param name="MaxFileSize" value="256MB"/>
+    <param name="MaxBackupIndex" value="20" />
+    <param name="Append" value="true" />
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="[%d{MM-dd HH\:mm\:ss} %-5p] [%c\:%L] - %m%n"/>
+    </layout>
+  </appender>
+  <appender name="WEB" class="org.apache.log4j.RollingFileAppender">
+  	<param name="Encoding" value="UTF-8"/>
+    <param name="File" value="${HDQS_LOG}/web.log" />
+    <param name="MaxFileSize" value="256MB"/>
+    <param name="MaxBackupIndex" value="20" />
+    <param name="Append" value="true" />
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="[%d{MM-dd HH\:mm\:ss} %-5p] [%c\:%L] - %m%n"/>
+    </layout>
+  </appender>
+  
+  <appender name="FRAMEWORK" class="org.apache.log4j.RollingFileAppender">
+  	<param name="Encoding" value="UTF-8"/>  
+    <param name="File" value="${HDQS_LOG}/framework.log" />
+    <param name="MaxFileSize" value="256MB"/>
+    <param name="MaxBackupIndex" value="20" />
+    <param name="Append" value="true" />
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="[%d{MM-dd HH\:mm\:ss} %-5p] [%c\:%L] - %m%n"/>
+    </layout>
+  </appender>
+  
+  <category name="com.ceb.hdqs.query.utils" additivity="false">
+    <priority value="info" />
+    <appender-ref ref="UTILS" />
+  </category>
+  <category name="com.ceb.hdqs.action.authorize" additivity="false">
+    <priority value="info" />
+    <appender-ref ref="AUTHORIZE" />
+  </category>
+  <category name="com.ceb.hdqs.action.synchronize" additivity="false">
+    <priority value="info" />
+    <appender-ref ref="SYNCHRONIZED" />
+  </category>
+  <category name="com.ceb.hdqs.action.syn.manager" additivity="false">
+    <priority value="info" />
+    <appender-ref ref="CLUSTERSWITCH" />
+  </category>
+  <category name="com.ceb.hdqs.action" additivity="false">
+    <priority value="info" />
+    <appender-ref ref="ACTION" />
+  </category>
+  <category name="com.ceb.bank" additivity="false">
+    <priority value="info" />
+    <appender-ref ref="ACTION" />
+  </category>
+  <category name="com.ceb.bank.authority" additivity="false">
+    <priority value="info" />
+    <appender-ref ref="AUTHORIZE" />
+  </category>
+  <category name="com.ceb.hdqs.action.query.verification" additivity="false">
+    <priority value="info" />
+    <appender-ref ref="VERIFY" />
+  </category>
+  
+  <category name="com.ceb.hdqs.service" additivity="false">
+    <priority value="info" />
+    <appender-ref ref="SERVICE" />
+  </category>
+  <category name="com.ceb.hdqs.sop" additivity="false">
+    <priority value="info" />
+    <appender-ref ref="SOP" />
+  </category>
+  <category name="com.ceb.hdqs.wtc" additivity="false">
+    <priority value="info" />
+    <appender-ref ref="WTC" />
+  </category>
+  <category name="com.ceb.hdqs.wtc.Handle0770QueryBean" additivity="false">
+    <priority value="info" />
+    <appender-ref ref="Handle0770Query" />
+  </category>
+  <category name="com.ceb.hdqs.wtc.Handle0771QueryBean" additivity="false">
+    <priority value="info" />
+    <appender-ref ref="Handle0771Query" />
+  </category>
+  <category name="com.ceb.hdqs.wtc.Handle0772QueryBean" additivity="false">
+    <priority value="info" />
+    <appender-ref ref="Handle0772Query" />
+  </category>
+  <category name="com.ceb.hdqs.wtc.Handle0773QueryBean" additivity="false">
+    <priority value="info" />
+    <appender-ref ref="Handle0773Query" />
+  </category>
+  <category name="com.ceb.hdqs.wtc.Handle0774QueryBean" additivity="false">
+    <priority value="info" />
+    <appender-ref ref="Handle0774Query" />
+  </category>
+  <category name="com.ceb.hdqs.wtc.Handle0775QueryBean" additivity="false">
+    <priority value="info" />
+    <appender-ref ref="Handle0775Query" />
+  </category>
+  <category name="com.ceb.hdqs.wtc.Handle0776QueryBean" additivity="false">
+    <priority value="info" />
+    <appender-ref ref="Handle0776Query" />
+  </category>
+  <category name="com.ceb.hdqs.wtc.Handle0777QueryBean" additivity="false">
+    <priority value="info" />
+    <appender-ref ref="Handle0777Query" />
+  </category>
+  <category name="com.ceb.hdqs.wtc.Handle0778QueryBean" additivity="false">
+    <priority value="info" />
+    <appender-ref ref="Handle0778Query" />
+  </category>
+  <category name="com.ceb.hdqs.wtc.Handle0779QueryBean" additivity="false">
+    <priority value="info" />
+    <appender-ref ref="Handle0779Query" />
+  </category>
+  <category name="com.ceb.hdqs.wtc.Handle0780QueryBean" additivity="false">
+    <priority value="info" />
+    <appender-ref ref="Handle0780Query" />
+  </category>
+  <category name="com.ceb.hdqs.wtc.Handle0781QueryBean" additivity="false">
+    <priority value="info" />
+    <appender-ref ref="Handle0781Query" />
+  </category>
+  <category name="com.ceb.hdqs.web" additivity="false">
+    <priority value="info" />
+    <appender-ref ref="WEB" />
+  </category>
+  <category name="org.apache" additivity="false">
+    <priority value="warn" />
+    <appender-ref ref="FRAMEWORK" />
+  </category>
+  <category name="org.quartz" additivity="false">
+    <priority value="warn" />
+    <appender-ref ref="FRAMEWORK" />
+  </category>
+  
+  <root>
+    <level value="warn" />
+    <appender-ref ref="STDOUT" />
+  </root>
+</log4j:configuration>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+    http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd" version="1.0">
+
+	<persistence-unit name="openjpa" transaction-type="JTA">
+		<provider>org.apache.openjpa.persistence.PersistenceProviderImpl</provider>
+		<jta-data-source>GDHistoryQueryJNDI</jta-data-source>
+		<exclude-unlisted-classes/>
+		<properties>
+  			<!-- <property name="openjpa.Connection2DriverName" value="oracle.jdbc.driver.OracleDriver"/>
+  			<property name="openjpa.Connection2URL" value="jdbc:oracle:thin:@10.1.242.187:1521:hdqsdb1"/>
+  			<property name="openjpa.Connection2UserName" value="hdqs"/>
+  			<property name="openjpa.Connection2Password" value="hdqs"/> -->
+  			<!-- <property name="openjpa.Connection2URL" value="jdbc:oracle:thin:@10.200.44.210:1521:orcl"/>
+  			<property name="openjpa.Connection2UserName" value="hadoop"/>
+  			<property name="openjpa.Connection2Password" value="hadoop"/> -->  			
+  			<!-- <property name="openjpa.jdbc.SynchronizeMappings" value="buildSchema(ForeignKeys=true)"/>
+			<property name="openjpa.Log" value="DefaultLevel=WARN, Runtime=WARN, Tool=INFO, SQL=TRACE" />
+			<property name="openjpa.ConnectionFactoryProperties" value="PrettyPrint=true, PrettyPrintLineLength=100" />
+			
+  			<property name="openjpa.RemoteCommitProvider" value="sjvm" />
+			<property name="openjpa.DataCache" value="true(CacheSize=5000, SoftReferenceSize=0, Types=com.ceb.hdqs.entity.AsyQueryRecord;com.ceb.hdqs.entity.ExchangeRecord)" />  
+			<property name="openjpa.QueryCache" value="true(CacheSize=1000, SoftReferenceSize=100)" />  
+			<property name="openjpa.QueryCompilationCache" value="true" /> -->
+			<property name="openjpa.Compatibility" value="QuotedNumbersInQueries=true" />
+		</properties>
+	</persistence-unit>
+</persistence>

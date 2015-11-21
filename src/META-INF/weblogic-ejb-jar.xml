@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wls:weblogic-ejb-jar xmlns:wls="http://xmlns.oracle.com/weblogic/weblogic-ejb-jar" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/ejb-jar_3_0.xsd http://xmlns.oracle.com/weblogic/weblogic-ejb-jar http://xmlns.oracle.com/weblogic/weblogic-ejb-jar/1.2/weblogic-ejb-jar.xsd">
+    <!--weblogic-version:10.3-->
+    <wls:weblogic-enterprise-bean>
+        <wls:ejb-name>HdqsQueryBean</wls:ejb-name>
+        <wls:stateless-session-descriptor></wls:stateless-session-descriptor>
+        <wls:jndi-name>HdqsQueryJNDI</wls:jndi-name>
+        <wls:enable-call-by-reference>true</wls:enable-call-by-reference>
+    </wls:weblogic-enterprise-bean>
+  
+</wls:weblogic-ejb-jar>

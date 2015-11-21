@@ -1,0 +1,14 @@
+WINDOW
+FLD:CHAXLX 1 S 0 0 0 0 NULL 0  //查询类型：0-客户；1-非客户
+FLD:SHFOBZ 1 S 0 0 0 0 NULL 0  //是否打印：0-两者都不；1-文件打印；2-文件导出
+FLD:KHZHLX 1 S 0 0 0 0 NULL 0   //卡对象类型 1-单位卡
+FLD:KEHUZH 21 S 0 0 0 0 NULL 0  //客户账号
+FLD:ZHAOXZ 1 S 0 0 0 0 NULL 0  //账号性质 0活期,2定期,3全部
+FLD:HUOBDH 2 S 0 0 0 0 NULL 0  //货币代号
+FLD:CHUIBZ 1 S 0 0 0 0 NULL 0  //钞汇标志：0-钞户；1-汇户；2-钞户和汇户
+FLD:SHUNXH 4 S 0 0 0 0 NULL 0  //客户帐号子序号
+FLD:QISHRQ 8 S 0 0 0 0 NULL 0  //起始日期
+FLD:ZZHIRQ 8 S 0 0 0 0 NULL 0  //终止日期
+FLD:JIOYMM 16 S 0 0 0 0 NULL 0  //交易密码
+FLD:CXUNBS 2 S 0 0 0 0 NULL 0  //查询笔数
+FLD:QISHBS 4 S 0 0 0 0 NULL 0  //起始笔数
