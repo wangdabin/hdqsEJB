@@ -1,0 +1,1 @@
+0 0 * * * ksh /opt/bigdata-cebank/bin/dodate.sh > /opt/bigdata-cebank/bin/dodate.log 2>&1 &

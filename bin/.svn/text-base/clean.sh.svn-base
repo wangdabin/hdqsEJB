@@ -1,0 +1,9 @@
+srm -rf /weblogic/domains/hdqs_domain/servers/AdminServer/cache/*
+rm -rf /weblogic/domains/hdqs_domain/servers/AdminServer/logs/*
+rm -rf /weblogic/domains/hdqs_domain/servers/AdminServer/tmp/*
+rm -rf /weblogic/domains/hdqs_domain/servers/HdqsServer/cache/*
+rm -rf /weblogic/domains/hdqs_domain/servers/HdqsServer/logs/*
+rm -rf /weblogic/domains/hdqs_domain/servers/HdqsServer/stage/*
+rm -rf /weblogic/domains/hdqs_domain/servers/HdqsServer/tmp/*
+rm -rf /weblogic/wlslogs/hdqs_domain/AdminServer/*
+rm -rf /weblogic/wlslogs/hdqs_domain/HdqsServer/*
